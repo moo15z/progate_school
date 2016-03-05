@@ -179,6 +179,11 @@ header {
   color: #fff !important;
   box-shadow: 0 0px 12px rgba(250, 250, 250, 0.15);
 }
+
+#more-text {
+  display: none;
+}
+
 /*-------  ここまでtop content  --------*/
 
 /*-------  ここからlanguages  --------*/
@@ -197,8 +202,14 @@ header {
   display: inline-block;
   vertical-align: top;
   width: 38%;
+  height: 220px;
   padding: 20px;
 }
+
+.languages-box p {
+  display: none;
+}
+
 
 /*-------  ここまでlanguages  --------*/
 
@@ -383,6 +394,17 @@ header {
 
 .column-box img {
   width: 100%;
+}
+
+.column-image.zoom {
+  background-size: 120% auto;
+}
+
+.zoom-black {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .column-title {

@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
     <link rel="stylesheet" href="stylesheet.css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
   <body>
@@ -48,7 +47,10 @@
             <p>プログラミングを学んで、自分の人生のキャリアを開こう。</p>
           </div>
           <div class="top-detail">
-            <a class="btn btn-top-white btn-lg" id="read-more">もっと詳しく</a>
+            <a class="btn btn-top-white btn-lg open" id="read-more">もっと詳しく</a>
+            <div id="more-text">
+              私がプログラミングを身につけて一番に感じたことは「自由」です。プログラミングができるようになる前は、どこかの企業に就職しないと食べていけないという恐怖感がありました。どこかに依存しないと生きていけないという感覚です。プログラミングで仕事をするようになって気づいたことは、どの企業もエンジニアを必要としていて、仕事も山のようにあるということでした。エンジニアで業務委託を受ければ月６０万〜１００万程度の収入になります。半年だけ働いて後は自分の時間に使うという働き方も可能です。在宅や海外でも働けます。世の中に必要とされる技術を磨き続けている限り自分は食べていけるという自信は、将来への不安を減らしてくれました。
+            </div>
           </div>
         </div>
       </div>
@@ -60,33 +62,33 @@
           <h3>学習する言語</h3>
         </div>
         <div class="languages-box-wrapper">
-          <div class="languages-box languages-box1">
+          <div class="languages-box languages-box1 languages-hover">
             <div class="icon">
               <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/lang_icons/html.png">
             </div>
             <h4>HTML & CSS</h4>
-            <p>Webページの見た目をつくる言語</p>
+            <p class="languages-detail">Webページの見た目をつくる言語</p>
           </div>
-          <div class="languages-box languages-box2">
+          <div class="languages-box languages-box2 languages-hover">
             <div class="icon">
               <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/lang_icons/js.png">
             </div>
             <h4>Javascript</h4>
-            <p>動的なウェブサイト構築に用いるプログラミング言語</p>
+            <p class="languages-detail">動的なウェブサイト構築に用いるプログラミング言語</p>
           </div>
-          <div class="languages-box languages-box3">
+          <div class="languages-box languages-box3 languages-hover">
             <div class="icon">
               <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/lang_icons/jquery.png">
             </div>
             <h4>jQuery</h4>
-            <p>効果やアニメーションを実装できるJavascriptライブラリ</p>
+            <p class="languages-detail">効果やアニメーションを実装できるJavascriptライブラリ</p>
           </div>
-          <div class="languages-box languages-box4">
+          <div class="languages-box languages-box4 languages-hover">
             <div class="icon">
               <img src="https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/lang_icons/git.png">
             </div>
             <h4>Git</h4>
-            <p>ソースコードのバージョン管理、共同開発を可能にするツール</p>
+            <p class="languages-detail">ソースコードのバージョン管理、共同開発を可能にするツール</p>
           </div>
         </div>
       </div>
@@ -331,6 +333,6 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
