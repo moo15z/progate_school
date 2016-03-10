@@ -44,6 +44,26 @@ $(function() {
   );
 //  fin
 
+//  ここからモーダル
+   $('.btn-pricing').click(function() {
+   	$('#apply-modal').fadeIn();
+   	var id = $(this).parents('.price-column').attr('id');
+    var title = $('#' + id).children('h2').text();
+    $('#course-select').val(id);
+    $('#apply-form').children('h2').text('【' + title + '】に申し込む');
+   });
+
+   $('#close-modal').click(function() {
+    $('#apply-modal').fadeOut();
+  });
+
+ // カルーススライダー部分
+  $('.carousel').carousel({
+	  interval: 2500
+	});
+
+// fin
+   
 //  ここからコラムの画像のホバー
    $('.img-zoom').hover(
     function() {
@@ -60,23 +80,29 @@ $(function() {
       
     }
   );
-
-
-
-
-
 //  fin
+
+// コラムの絞り込み
+	$(function() {
+	    $("#tags span").click(function() {
+	        var tags = $(this).attr('id');
+	        $("#tags span").removeClass('select');
+	        $(this).addClass('select');
+	        $("#animal div").hide();
+	        if(tags == 'dogs') {
+	            $("#animal .dog").show();
+	        } else if(tags == 'cats') {
+	            $("#animal .cat").show();
+	        } else if(tags == 'birds') {
+	            $("#animal .bird").show();
+	        } else {
+	            $("#animal div").show();
+	        }
+	    });
+	});
 
 
 });
-
-
- 
-
-
-
-
-
 
 
 
