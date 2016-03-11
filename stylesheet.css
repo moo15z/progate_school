@@ -317,8 +317,8 @@ header {
 }
 
 .modal {
-  position: absolute;
-  margin: 0 auto;
+  position: relative;
+  margin: 100px auto;
   background-color: #e6ecf0;
   padding: 20px 0 40px;
   border-radius: 10px;
@@ -338,12 +338,10 @@ header {
 
 .fa-2x {
   font-size: 2em;
-  z-index: 999;
 }
 
 .fa {
   display: inline-block;
-  z-index: 999;
 }
 
 #apply-form {
@@ -391,15 +389,21 @@ select {
 
 
 /*-------  ここからmentor  --------*/
+
 .mentors-section {
   text-align: center;
+  padding-bottom: 60px;
+}
+
+#mentors > .container {
+  width: 936px;
 }
 
 .mentor-box {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  margin-bottom: 50px;
-
+  margin-bottom: 80px;
+  display: inline-block;
 }
 
 .mentor-image {
@@ -410,6 +414,14 @@ select {
   border-radius: 50%;
 }
 
+.carousel-inner > .active {
+    left: 0;
+}
+
+
+
+
+
 #mentor-carousel img {
   display: inline-block;
 }
@@ -419,6 +431,26 @@ select {
 }
 .carousel-indicators {
   z-index: 5;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #fff;
 }
 /*-------  ここまでmentor  --------*/
 
@@ -518,6 +550,10 @@ select {
   font-size: 17px;
   font-weight: 600;
 }
+
+.btn-loading:hover {
+  color: black;
+}
 /*-------  ここまでcolumn  --------*/
 
 
@@ -598,6 +634,11 @@ textarea {
 .contact-about p {
   margin: 0 0 24px;
   line-height: 24px;
+}
+
+.error-message {
+  color: #F51414;
+  height: 20px;
 }
 
 

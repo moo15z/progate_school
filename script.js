@@ -57,7 +57,7 @@ $(function() {
     $('#apply-modal').fadeOut();
   });
 
- // カルーススライダー部分
+ // カルーセルスライダー部分
   $('.carousel').carousel({
 	  interval: 2500
 	});
@@ -83,23 +83,39 @@ $(function() {
 //  fin
 
 // コラムの絞り込み
-	$(function() {
-	    $("#tags span").click(function() {
-	        var tags = $(this).attr('id');
-	        $("#tags span").removeClass('select');
-	        $(this).addClass('select');
-	        $("#animal div").hide();
-	        if(tags == 'dogs') {
-	            $("#animal .dog").show();
-	        } else if(tags == 'cats') {
-	            $("#animal .cat").show();
-	        } else if(tags == 'birds') {
-	            $("#animal .bird").show();
-	        } else {
-	            $("#animal div").show();
-	        }
-	    });
-	});
+  $('.filter-item').click(function(){
+    $('.filter-item').removeClass('active');
+    $(this).addClass('active');
+    var id = $(this).attr('id');
+    if (id === 'all') {
+      $('.column-box').fadeIn();
+    } else {
+      $('.wrapper-outer').children('.' + id).fadeIn();
+      $('.column-box').not('.' + id).fadeOut();
+    }
+  });
+//   fin
+
+// お問い合わせフォーム部分
+  $('.contact-form form').submit(function(){
+    var error_warning = false;
+    $(this).children('input, textarea').each(function(){
+      var body = $(this).val();
+      if (!body) {
+        $(this).prev('.error-message').text('入力してください');
+        error_warning = true;
+      } else {
+        $(this).prev('.error-message').text('');
+      }
+    });
+
+    if (!error_warning) {
+      $('.contact-form').html('<h4>お問い合わせありがとうございます。</h4>');
+    }
+    return false;
+  });
+ 
+ //  fin
 
 
 });
