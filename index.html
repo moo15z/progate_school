@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Progate School</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
     <link rel="stylesheet" href="stylesheet.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -48,7 +49,7 @@
             <p>プログラミングを学んで、自分の人生のキャリアを開こう。</p>
           </div>
           <div class="top-detail">
-            <a class="btn btn-top-white btn-lg open" id="read-more">もっと詳しく</a>
+            <a class="btn btn-top-white btn-lg open" id="read-more" style="margin-bottom: 20px">もっと詳しく</a>
             <div id="more-text">
               私がプログラミングを身につけて一番に感じたことは「自由」です。プログラミングができるようになる前は、どこかの企業に就職しないと食べていけないという恐怖感がありました。どこかに依存しないと生きていけないという感覚です。プログラミングで仕事をするようになって気づいたことは、どの企業もエンジニアを必要としていて、仕事も山のようにあるということでした。エンジニアで業務委託を受ければ月６０万〜１００万程度の収入になります。半年だけ働いて後は自分の時間に使うという働き方も可能です。在宅や海外でも働けます。世の中に必要とされる技術を磨き続けている限り自分は食べていけるという自信は、将来への不安を減らしてくれました。
             </div>
@@ -133,7 +134,7 @@
           <h3>コースを選ぶ</h3>
         </div>
         <div id="short" class="price-column">
-          <h2>短期集中2週間コース</h2>
+          <h2>短期集中２週間コース</h2>
           <h3>3万円</h3>
           <ul>
             <li>期間 : 2週間</li>
@@ -221,12 +222,6 @@
                   <p>-神田美智</p>
                 </div>
               </div>
-              <a class="left carousel-control" href="#carousel_sample" data-slide="prev">
-               <span class="glyphicon glyphicon-chevron-left"></span>
-              </a>
-              <a class="right carousel-control" href="#carousel_sample" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-              </a>
          </div>
       </div>
     </div>
@@ -328,7 +323,7 @@
               <div class="error-message"></div>
               <input type="text" name="subject" placeholder="Subject" class="contact-subject">
               <div class="error-message"></div>
-              <textarea name="message" class="form-control" placeholder="Message"></textarea>
+              <textarea name="message" id="textarea-contact" class="form-control" placeholder="Message" style="height: 150px;"></textarea>
               <button type="submit" class="btn btn-contact">Submit</button>
             </form>
           </div>
